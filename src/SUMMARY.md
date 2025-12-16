@@ -8,4 +8,5 @@
 - [UML](UML_diagramm.md)
 - [BPMN](BPMN_diagramm.md)
 - [Компонентная схема](K_schema.md)
+- [Swagger](Swagger.md)
 - [Статья](article.md)
