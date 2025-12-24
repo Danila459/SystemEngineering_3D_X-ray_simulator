@@ -19,9 +19,10 @@
 
 **1.3 Определения, акронимы и сокращения**
 
+
 <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd;">
   <thead>
-    <tr style="background-color: #f2f2f2;">
+    <tr>
       <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Термин</th>
       <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Определение</th>
     </tr>
@@ -29,9 +30,9 @@
   <tbody>
     <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">DICOM</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">Digital Imaging and Communications in Medicineь</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Digital Imaging and Communications in Medicine</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">3D</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Трехмерный</td>
     </tr>
@@ -39,7 +40,7 @@
       <td style="border: 1px solid #ddd; padding: 8px;">ПО</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Программное обеспечение</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">AI/ML</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Искусственный интеллект/Машинное обучение</td>
     </tr>
@@ -47,7 +48,7 @@
       <td style="border: 1px solid #ddd; padding: 8px;">CNN</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Сверточная нейронная сеть</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">API</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Интерфейс программирования приложений</td>
     </tr>
@@ -55,7 +56,7 @@
       <td style="border: 1px solid #ddd; padding: 8px;">GUI</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Графический пользовательский интерфейс</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">КТ</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Компьютерная томография (не является исходными данными для данного ПО)</td>
     </tr>
@@ -63,11 +64,13 @@
       <td style="border: 1px solid #ddd; padding: 8px;">Вертебролог</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Врач-специалист по заболеваниям позвоночника</td>
     </tr>
-    <tr style="background-color: #f9f9f9;">
+    <tr>
       <td style="border: 1px solid #ddd; padding: 8px;">Сегментация</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Выделение на изображении областей, соответствующих позвонкам</td>
     </tr>
   </tbody>
+</table>
+
 
 **1.4 Ссылки**
 
@@ -86,14 +89,15 @@
 **2.1 Взаимодействие с продуктом**
 
 SpineSim3D является автономным (standalone) программным продуктом, который функционирует как интеллектуальный рабочий инструмент врача-диагноста. Продукт занимает место в цепочке клинического анализа между системами получения изображений (рентген-аппаратами/PACS) и системами документирования (медицинскими информационными системами).
+
 •	Входные данные: Основными входными артефактами являются цифровые рентгенограммы позвоночника в стандартных проекциях (передне-задняя и боковая) в формате DICOM.
 •	Выходные данные: Ключевыми выходными артефактами являются: 1) интерактивная 3D-модель позвоночника, 2) отчет с количественными измерениями и визуализацией, 3) прогнозные модели и данные симуляции.
 •	Связи с другими системами: На начальном этапе продукт является изолированным. В перспективе он может быть интегрирован как модуль в PACS (Picture Archiving and Communication System) или RIS (Radiology Information System) через стандартизированные интерфейсы (например, HL7, DICOM SR).
-2.2 Функции продукта
+
+**2.2 Функции продукта**
 •	Модуль данных: Импорт, отображение и базовая обработка DICOM-изображений.
 •	Модуль анализа изображений: Автоматическая и ручная сегментация анатомических структур позвоночника, расстановка ключевых точек.
 •	Модуль 3D-моделирования: Реконструкция трехмерной геометрической модели на основе 2D-данных, ее визуализация и манипуляция.
 •	Модуль прогнозирования: Математическое моделирование прогрессии заболеваний на основе текущего состояния и заданных параметров.
 •	Модуль отчетности: Автоматическая генерация структурированного клинического отчета и экспорт данных в распространенные форматы.
 
-</table>
