@@ -10,3 +10,4 @@
 - [Swagger](Swagger.md)
 - [Мотивация выбора баз данных и механик коммуникаций](ARD.md)
 - [Статья](article.md)
+- [Публикация](publication.md)
